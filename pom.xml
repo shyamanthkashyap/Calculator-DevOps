@@ -15,13 +15,10 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>calculator.Calculator</mainClass>
+                                    <mainClass>org.example.Calculator</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
