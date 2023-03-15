@@ -1,21 +1,33 @@
 package org.example;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static double factorial(double num) {
+        logger.info("Factorial of " + num);
         double factorial = 1;
         for(int i = 1; i <= num; i++){
             factorial *= i;
         }
+        logger.info("Result - " + factorial);
         return factorial;
     }
     public static double squareRoot(double num){
+        logger.info("Square Root of " + num);
+        logger.info("Result - " + Math.sqrt(num));
         return Math.sqrt(num);
     }
     public static double power(double num1, double num2){
+        logger.info("Power of " + num1 + " and " + num2);
+        logger.info("Result - " + Math.pow(num1,num2));
         return Math.pow(num1,num2);
     }
     public static double naturalLog(double num){
+        logger.info("Natural Log of " + num);
+        logger.info("Result - " + Math.log(num));
         return Math.log(num);
     }
     public static void main(String[] args) {
