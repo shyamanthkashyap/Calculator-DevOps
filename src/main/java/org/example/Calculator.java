@@ -31,7 +31,7 @@ public class Calculator {
         return Math.log(num);
     }
     public static void main(String[] args) {
-        System.out.println("Minor Changes 5");
+        System.out.println("Minor Changes 6");
         Calculator calculator = new Calculator();
         double A,B;
         Scanner scanner = new Scanner(System.in);
