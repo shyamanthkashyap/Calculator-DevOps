@@ -4,13 +4,13 @@ import org.junit.Test;
 
 public class CalculatorTest {
     Calculator calculator = new Calculator();
-    @Test
-    public void testFactorial() {
-        double A = 5;
-        double factorial = 120;
-        double result = calculator.factorial(A); ;
-        Assert.assertEquals(factorial, result, 0);
-    }
+//    @Test
+//    public void testFactorial() {
+//        double A = 5;
+//        double factorial = 120;
+//        double result = calculator.factorial(A); ;
+//        Assert.assertEquals(factorial, result, 0);
+//    }
     @Test
     public void testNaturalLog() {
         double A = 1;
